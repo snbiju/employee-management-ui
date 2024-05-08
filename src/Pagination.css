@@ -1,0 +1,38 @@
+/* Pagination.css */
+
+.pagination {
+  display: flex;
+  justify-content: center; /* Center the pagination controls */
+  align-items: center;
+  margin-top: 20px; /* Add some margin at the top */
+}
+
+.pagination button {
+  padding: 6px 12px; /* Padding for the buttons */
+  margin: 0 4px; /* Add some space between buttons */
+  border: 1px solid #ccc; /* Border color */
+  background-color: white; /* Background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Change cursor to pointer */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.pagination button:hover {
+  background-color: #dad7d7; /* Change background color on hover */
+}
+
+.pagination .active {
+  background-color: #007bff; /* Change background color for active page */
+  color: rgb(255, 255, 255); /* Change text color for active page */
+  border-color: #007bff; /* Change border color for active page */
+}
+
+.pagination .disabled-button {
+  opacity: 0.6; /* Make disabled buttons less opaque */
+  pointer-events: none; /* Disable pointer events */
+}
+
+.pagination .disabled-button:hover {
+  background-color: white; /* Ensure background color stays white when disabled */
+}
